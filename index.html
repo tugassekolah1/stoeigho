@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoeigho</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="icon" href="img/unnamed.ico" type="image/x-icon">
+    <style>
+body{
+  background-image: url(img/5690635.jpg)!important;
+  background-attachment: fixed;
+  background-size: cover;
+      }
+
+.navbar{
+  font-family: "Pacifico", cursive;
+  font-size: 25px;
+  background: hsl(0%, 0% 100% 0.9);
+  backdrop-filter: blur(60px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 0 8px 1px hsl(0%, 0% 100% 0.3);
+  margin: 10px 20px 20px 20px;
+}
+.nav-item:hover{
+  background: rgba(255, 255, 255, 0.2 );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+}
+.baner{
+  border: 5px solid rgba(255, 255, 255, 0.7);
+  margin-top: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: baner 3s;
+}
+.baner img{
+border-radius: 10px;
+}
+@keyframes baner{
+ 0%{
+    transform: translateY(-50px);
+  opacity: 0;
+}
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.card{
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 20px !important;
+  text-align: center;
+  transition: transform 0.7s 
+
+}
+.card:hover{
+  transform: translateY(-6px);
+}
+.card img{
+  border-radius: 20px 20px 0 0;
+}
+
+@media (min-width:1000px){
+.baner{
+border-radius: 20px;
+border: 5px solid rgba(255, 255, 255, 0.7);
+margin: 100px 200px 10px 200px;
+}
+.w-lg-50{
+  width: 50% !important;
+}
+}
+.jdl{
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2 );
+  backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 38px;
+  margin: 50px;
+  text-align: center;
+}
+.p-4{
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 7px;
+  background: rgba(255, 255, 255, 0.2 );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 38px;
+}
+.modal-content{
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2 );
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 38px;
+}
+
+
+input, textarea, button:not(.btn-close, .carousel-control-next, .carousel-control-prev){
+  background: rgba(255, 255, 255, 0.2 ) !important;
+  backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.7) !important;
+  border-radius: 20px;
+  padding: 10px;
+}
+footer{
+  background: rgba(255, 255, 255, 0.2 );
+  backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+  
+
+<nav class="navbar navbar-expand-lg rounded-5 fixed-top" >
+  <div class="container-fluid">
+    <img class="rounded-5" src="img/unnamed.jpg" width="50">
+    <h5 class="p-2">STOEIGHO</h5>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end m-0" id="navbarNav">
+      <ul class="navbar-nav justify-content-end p-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#memorial">Foto Kenangan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#kontak">Hubungi Kami</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+<!--kie banere-->
+<div>
+<div class="baner">
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="img/999.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="img/71.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="img/881.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+    <h1 class="jdl">“Terima kasih untuk semua suka dan duka.”</h1>
+</div>
+
+
+
+
+<!--isi-->
+<div class="row row-cols-3 row-cols-md-3 m-1 g-4 ">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">36</h1>
+        <p class="card-text">Siswa</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">3</h1>
+        <p class="card-text">Tahun bersama</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">5</h1>
+        <p class="card-text">Kali ganti wali kelas</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--kie foto fotone-->
+<div id="memorial">
+<h1 class="text-center jdl">Kelas 7</h1>
+<div class="foto">
+<div class="row row-cols-2 row-cols-md-3 g-2  gy-2">
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/71.jpg" class="card-img-top img-cover" alt="..." >
+      <div class="card-body">
+        <h5 class="card-title">Ulang tahun pak Tarsono</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/72.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Acara hari besar Islam</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/73.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Lomba fashion show class meeting </h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/74.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Lomba LT1 Pramuka</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/75.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Praktik jualan </h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/76.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kegiatan Projek di hari jumat</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/77.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Membuat video drama untuk lomba class meeting</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/78.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Projek di hari jumat</h5>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<h1 class="jdl">Kelas 8</h1>
+<div class="foto">
+<div class="row row-cols-2 row-cols-md-3 g-2 ">
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/881.jpg" class="card-img-top img-cover" alt="..." >
+      <div class="card-body">
+        <h5 class="card-title">Menjadi petugaas upacara</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/882.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Acara hari besar Islam</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/883.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Foto bersama Bu Rani, guru bahasa Inggris</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/884.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Foto bersama pak tarsono, sebelum pensiun</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/885.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Foto bersama pak tarsono, sebelum pensiun</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/886.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ulang tahun pak Ari, wali kelas kita saat kelas 8.</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/887.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Study Wisata ke Jakarta-Bandung (ini di kawah gunung tangkuban perahu)</h5>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="img/888.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Study Wisata ke Jakarta-Bandung (ini di kawah gunung tangkuban perahu)</h5>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="img/889.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Memberikan kenang kenangan untuk Pak Tarsono yang akan pensiun</h5>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="img/890.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Buka bersama satu kelas di Legok</h5>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<h1 class="jdl">Kelas 9</h1>
+<div class="foto">
+<div class="row row-cols-2 row-cols-md-3 g-2 ">
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/991.jpg" class="card-img-top img-cover" alt="..." >
+      <div class="card-body">
+        <h5 class="card-title">Foto bersama bu Unik, guru BK pengganti Pak Tarsono</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/992.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Foto bersama</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/993.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Acara hari besar islam (kita bawa takir dan makan bareng-bareng)</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/994.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Lomba P5, drama rama dan sinta diawali dengan tari kecak. 1 kelas ikut. Kita latihan 1 bulanan setelah pulang sekolah dengan segala dramanya, alhamdulilah kita mendapat juara terfavorit</h5>
+      </div>
+    </div>
+  </div>
+<div class="col">
+    <div class="card h-100">
+      <img src="img/9999.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Ulang tahun Bu April</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/995.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Foto setelah lomba bersama Pak Ari, Wali kelas kita saat kelas 8. Kita membuat bangga 5 wali kelas sekaligus.</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/996.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Fotbar dengan bu wiji, saat uprak pjok</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/997.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Silaturahmi ke rumah pak Tarsono ketika bulan ramadhan.</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="img/998.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">fotbar ketika membuat video angkatan</h5>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="card h-100">
+      <img src="img/999.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Lulus. Akhirnya, kisah kita berakhir sampai di sini. Meskipun begitu, kisah kita akan abadi selamanyaaaaa~</h5>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<center>
+<div class="p-5">
+  <p>Klik tombol di bawah untuk kata-kata acak</p>
+
+<!-- Button trigger modal -->
+<button onclick="generateQuote()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Random Quotes
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Today Quotes</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="txt"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</center>
+
+<script>
+ var quotes = [ //kie nggon penyimpanan. kie dadi apa yah dadi nggo nyimpen konten. kaya kotak nggo nyimpen barang
+"Manjadda Wajada, siapa yang bersungguh-sungguh akan berhasil - <i>Ade Riyanto</i>",
+"Kita tidak mengingat hari Kita mengingat moment - <i>Ashrul</i>",
+"Kejarlah mimpimu setinggi langit hingga menabrak satelit - <i>Atta</i>",
+"Ubur ubur ikan lele, yearbook Lee - <i>Ifa</i>",
+"Nilai kamu kecil? Zoom aja - <i>Alifah</i>",
+"Dia adalah ketidak mungkinan yang selama ini selalu kusemogakan - <i>Aura</i>",
+"Salam booyah - <i>Charly</i>",
+"Salam booyah - <i>Yusril</i>",
+"Jalan boleh masing-masing tapi jangan asing - <i>Rafa Azyan</i>",
+"Duit aja come and go, apalagi dia - <i>Safa</i>",
+"People come and go itu nyata - <i>Selvi</i>",
+"Ikan hiu makan permen kapas alhamdulillah lulus - <i>Laula</i>",
+"Berubahlah selagi ada waktu bukan berubah menunggu waktu - <i>Anis</i>",
+"Fortis fortuna adiuvat - <i>Bintang</i>",
+"Setiap pertemuan ada perpisahan, diantara keduanya tercipta kenangan yang abadi dalam pikiran ~lan maj - <i>Devin</i>",
+"Teruslah menuntut ilmu - <i>Kurniawan</i>",
+"Kejadian hari ini adalah kenangan di hari esok - <i>Ifat</i>",
+"Nilai kamu kecil??? Zoom aja biar besar - <i>Ais</i>",
+"Momen hari ini adalah kenangan besok - <i>Salma</i>",
+"Hidup yang baik adalah kumpulan kenangan indah - <i>Zahra</i>",
+"Berjanjilah berpisah untuk merubah bukan untuk berubah - <i>Putri</i>",
+"Aku belum jadi apa apa sedangkan manusia yang membesarkanku Sudah mulai menua - <i>Wita Novi Yanti</i>",
+"Matahari pergi , namun kenangan tetap bersinar - <i>Reza Putri</i>",
+"Semoga Kita memiliki masa depan yang cerah - <i>Fahri</i>",
+"Jangan bersedih karena Kita berpisah tapi bersenanglah karena Kita pernah ada. Paham!! - <i>Denis</i>",
+"Ubur ubur ikan lele kenang aku Lee - <i>Adya Lovely</i>",
+"Salam booyah - <i>Dafa</i>",
+"Salam booyah - <i>Haichal</i>",
+"Takkan pernah tergantikan kenangan bersama kalian - <i>Agita</i>",
+"Pahlawanmu terlalu seleb buat aku yang cuma bocil bussid - <i>Raga Hagrief</i>",
+"Aksara dengan pena bertinta lebih baik Dari mereka makhluk bernyawa - <i>Lutvia</i>",
+"Together or not together, I hope the universe takes care of you do matter what - <i>Evelin</i>",
+"Jangan lupa tidur - <i>Sahri</i>",
+"Jangan lupa madang - <i>Jalin</i>",
+];
+
+let quoteText = document.querySelector(".txt"); //jere artine document.queri kue nggo nggolet bagian ning html. ddi kkue prentah nggolet bagian ning html ciri cirine due class .txt
+
+function generateQuote() { //function kue programe, terus di arani generatequetes() 
+  var randomIndex = Math.floor(Math.random() * quotes.length); //var nggo nyimpen variabel, mthrandom floor mbulatna, mathrandom gawe angka acak. misal ana 36 var. mthrandom kocok angka pira misale 0.92. terus dikali jumlahe var ana pira, 36. hasile 0.92x36=33,12. mathfloorr mbuletna dadi 33. terus dipilih baris ke 33. komputer ngetung e 0-35. ora 1-36. meskipun ana 36  dinomeri deng komputer 0-35. ning komputer baris ke 33. bersrti menurut itungane dwek baris ke 34
+  var quote = quotes[randomIndex]
+  quoteText.innerHTML = '"' + quote + '"'
+}
+</script>
+
+
+
+<div class=" m-3 p-4 rounded-5" id="kontak">
+<center>
+ <div class="w-lg-50 text-start m-5 ">
+  <h1>Hubungi kami</h1>
+  <div class="mb-3 ">
+  
+  <label for="exampleFormControlInput1" class="form-label">Nama</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+</div>
+<div class="mb-3 ">
+  <label for="exampleFormControlInput1" class="form-label">Alamat Email</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+ </div>
+ </center>
+ </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!--footer y, -->
+<footer class=" p-5 text-center">
+  <p>Created with ❤ by Ade Riyanto</p>
+  <div class="p-4">
+  <p>Social Media</p>
+ <a href="https://www.instagram.com/ix.ii.ninetwoclsz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> <img class="m-3" src="img/instagram.svg" width="50"></a>
+ <a href="https://www.tiktok.com/@ninetw0z.spensap84"><img class="m-3" src="img/tiktok.svg" width="50" alt=""></a>
+  </div>
+</footer>
+
+
+
+  </body>
+</html>
