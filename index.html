@@ -24,12 +24,14 @@ body{
   border: 1px solid rgba(255, 255, 255, 0.7);
   box-shadow: inset 0 0 8px 1px hsl(0%, 0% 100% 0.3);
   margin: 10px 20px 20px 20px;
+  animation: baner 3s;
 }
 .nav-item:hover{
   background: rgba(255, 255, 255, 0.2 );
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 20px;
+  padding: 2px;
 }
 .baner{
   border: 5px solid rgba(255, 255, 255, 0.7);
@@ -83,8 +85,9 @@ margin: 100px 200px 10px 200px;
   backdrop-filter: blur(7px);
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 38px;
-  margin: 50px;
+  margin: 10px 50px 50px 50px ;
   text-align: center;
+  animation: baner 3s;
 }
 .p-4{
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -119,7 +122,15 @@ footer{
   align-items: center;
   text-align: center;
 }
-
+.dropdown-menu{
+  background: rgba(255, 255, 255, 0.2 );
+  backdrop-filter: blur(70px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.dropdown-item:hover{
+  background: rgba(255, 255, 255, 0.5 );
+  backdrop-filter: blur(20px);
+}
     </style>
 </head>
 <body>
@@ -137,8 +148,15 @@ footer{
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Beranda</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#memorial">Foto Kenangan</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Foto Kenangan
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#7">Kelas 7</a></li>
+            <li><a class="dropdown-item" href="#8">Kelas 8</a></li>
+            <li><a class="dropdown-item" href="#9">Kelas 9</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#kontak">Hubungi Kami</a>
@@ -217,7 +235,7 @@ footer{
 
 <!--kie foto fotone-->
 <div id="memorial">
-<h1 class="text-center jdl">Kelas 7</h1>
+<h1 id="7" class="text-center jdl">Kelas 7</h1>
 <div class="foto">
 <div class="row row-cols-1 row-cols-md-3 g-2  gy-2">
   <div class="col">
@@ -288,14 +306,14 @@ footer{
 </div>
 </div>
 
-<h1 class="jdl">Kelas 8</h1>
+<h1 id="8" class="jdl">Kelas 8</h1>
 <div class="foto">
 <div class="row row-cols-1 row-cols-md-3 g-2 ">
   <div class="col">
     <div class="card h-100">
       <img src="img/881.jpg" class="card-img-top img-cover" alt="..." >
       <div class="card-body">
-        <h5 class="card-title">Menjadi petugaas upacara</h5>
+        <h5 class="card-title">Menjadi petugas upacara</h5>
       </div>
     </div>
   </div>
@@ -378,7 +396,7 @@ footer{
 </div>
 
 
-<h1 class="jdl">Kelas 9</h1>
+<h1 id="9" class="jdl">Kelas 9</h1>
 <div class="foto">
 <div class="row row-cols-1 row-cols-md-3 g-2 ">
   <div class="col">
@@ -585,6 +603,4 @@ function generateQuote() { //function kue programe, terus di arani generatequete
 
 
   </body>
-
 </html>
-
